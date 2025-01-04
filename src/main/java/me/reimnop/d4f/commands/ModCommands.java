@@ -18,7 +18,7 @@ import java.io.File;
 public final class ModCommands {
     private ModCommands() {}
 
-    public static void init() {
+    public static void init(int num) {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             final LiteralCommandNode<ServerCommandSource> node = dispatcher.register(
                     CommandManager.literal("discord4fabric")
@@ -73,7 +73,7 @@ public final class ModCommands {
                                                     () -> Text.literal("Refreshing cache!"),
                                                     false
                                             );
-                                            Discord4Fabric.DISCORD.initCache();
+                                            Discord4Fabric.DISCORD.initCache(num);
                                             return 1;
                                         } catch (GuildException e) {
                                             context.getSource().sendError(Text.literal("An unexpected error occurred! Check logs for more details"));
