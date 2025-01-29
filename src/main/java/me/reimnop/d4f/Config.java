@@ -49,7 +49,7 @@ public class Config {
     public String topic = "Total player: %server:online%/%server:max_players% | Server TPS: %server:tps%";
     public Boolean forceOnlineUuid = false;
     public Boolean requiresLinkedAccount = false;
-    public String avatarUrl = "https://crafatar.com/avatars/%s?overlay";
+    public String avatarUrl = "https://mc-heads.net/avatar/%s";
     public String avatarUrlTextureHash = "https://mc-heads.net/avatar/%s"; // for fabrictailor compat
     public Boolean allowBotMessages = false;
     public Integer playerListDisplayAmount = 5;

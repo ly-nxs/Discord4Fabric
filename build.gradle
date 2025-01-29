@@ -153,7 +153,7 @@ modrinth {
         return
     }
 
-    projectId = "discord4fabric"
+    projectId = "discord4fabricMulti"
     versionNumber = "${project.mod_version}-${project.minecraft_version}"
     versionType = "release"
     uploadFile = remapJar
